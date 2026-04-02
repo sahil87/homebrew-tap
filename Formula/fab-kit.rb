@@ -1,28 +1,28 @@
 class FabKit < Formula
   desc "Specification-driven development toolkit — router, workspace manager, worktree manager, and backlog tool"
   homepage "https://github.com/sahil87/fab-kit"
-  version "0.45.0"
+  version "0.45.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/sahil87/fab-kit/releases/download/v#{version}/brew-darwin-arm64.tar.gz"
-      sha256 "367ad003dfef600f7a4b54d5ab145018f85cf6934189798e3dba8b679d0a8e3c"
+      sha256 "d75b29dc5d36b388b33e0ba6d0bd58f9cad557ffa22d4f203aea6f1de6e39359"
     end
     on_intel do
       url "https://github.com/sahil87/fab-kit/releases/download/v#{version}/brew-darwin-amd64.tar.gz"
-      sha256 "7dabe515b865cae0e009a5d1083f7784899b9183c0dedf3c6d3a0de2529b0b22"
+      sha256 "8238e78ebb5c6097c4135cb21cba04cdf5e8782c373c1a6d64881764cb19dfa7"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sahil87/fab-kit/releases/download/v#{version}/brew-linux-arm64.tar.gz"
-      sha256 "e96f55885de7e829b3cdd39763c507404beaff550902f5ded8869c1446d82dc2"
+      sha256 "eb4926be0f2392b683f395b749e9da2e2ff45806f115f9d9258b301d2906233c"
     end
     on_intel do
       url "https://github.com/sahil87/fab-kit/releases/download/v#{version}/brew-linux-amd64.tar.gz"
-      sha256 "879d8070edb3e2451cf2c6706f3bba993fe30742947d0993273db607320423e0"
+      sha256 "7c6d2ad37c89796b7d2a0b3964daa8ba605f1953c7cc4536cb96d8184a7066be"
     end
   end
 
