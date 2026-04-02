@@ -13,4 +13,5 @@ brew install <formula>
 
 | Formula | Description |
 |---------|-------------|
+| `fab-kit` | Specification-driven development toolkit (fab shim, wt, idea) |
 | `tu` | AI coding assistant cost tracking CLI |
