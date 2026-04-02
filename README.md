@@ -14,4 +14,5 @@ brew install <formula>
 | Formula | Description |
 |---------|-------------|
 | `fab-kit` | Specification-driven development toolkit (fab shim, wt, idea) |
+| `rk` | Tmux session manager with web UI |
 | `tu` | AI coding assistant cost tracking CLI |
