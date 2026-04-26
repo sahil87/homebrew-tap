@@ -17,11 +17,12 @@ brew install <formula>
 | [`rk`](https://github.com/sahil87/run-kit) | Tmux session manager with web UI |
 | [`tu`](https://github.com/sahil87/tu) | AI coding assistant cost tracking CLI |
 
-## The full AI dev toolkit
+## The full AI dev toolkit — [ai.shll.in](https://ai.shll.in)
 
-Install all three together — spec-driven workflow, session management, and cost tracking in one go:
+Spec-driven workflow, session management, and cost tracking in one install:
 
 ```bash
-brew tap sahil87/tap
-brew install fab-kit rk tu
+brew install sahil87/tap/ai
 ```
+
+Pulls `fab-kit`, `rk`, and `tu` as dependencies.
