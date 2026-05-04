@@ -15,16 +15,21 @@ brew install <formula>
 
 | Formula | Description |
 |---------|-------------|
-| [`fab-kit`](https://github.com/sahil87/fab-kit) | Specification-driven development toolkit (fab shim, wt, idea) |
+| [`fab-kit`](https://github.com/sahil87/fab-kit) | Specification-driven development toolkit |
 | [`rk`](https://github.com/sahil87/run-kit) | Tmux session manager with web UI |
 | [`tu`](https://github.com/sahil87/tu) | AI coding assistant cost tracking CLI |
+| [`hop`](https://github.com/sahil87/hop) | Quick repo navigation and operations |
+| [`wt`](https://github.com/sahil87/wt) | Git worktree management CLI *(coming soon)* |
+| [`idea`](https://github.com/sahil87/idea) | Idea capture CLI *(coming soon)* |
 
-## The full AI dev toolkit
+## Install everything
 
-Spec-driven workflow, session management, and cost tracking in one install:
+Get the full toolkit in one command:
 
 ```bash
-brew install sahil87/tap/ai
+brew install sahil87/tap/all
 ```
 
-Pulls `fab-kit`, `rk`, and `tu` as dependencies.
+Pulls all formulas above as dependencies.
+
+> Note: `all` will be installable end-to-end once `wt` and `idea` ship their first releases. Until then, install the available tools individually.
