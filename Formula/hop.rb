@@ -1,28 +1,28 @@
 class Hop < Formula
   desc "Locate, open, list, and operate on repos from hop.yaml"
   homepage "https://github.com/sahil87/hop"
-  version "0.0.7"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/sahil87/hop/releases/download/v#{version}/hop-darwin-arm64.tar.gz"
-      sha256 "2e2b9bfe8187ea722d239d2580387b5d0823a8ea9357fc392017392682dead18"
+      sha256 "c3a789f5691a59c4f6eb0baef723dbba0e5971970f38ec6e4c488b5e20058218"
     end
     on_intel do
       url "https://github.com/sahil87/hop/releases/download/v#{version}/hop-darwin-amd64.tar.gz"
-      sha256 "85f2f0141c059da176292d6acde2d17415a1ebf86eed1f55975e83a112462842"
+      sha256 "104a52c9bfc993c9976f8aad2e567b9f85c90035b205cbbdc6d9836ce5ec8cb4"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sahil87/hop/releases/download/v#{version}/hop-linux-arm64.tar.gz"
-      sha256 "17e3c3921ba52396fb0015554eab49355c833f4fad84e77a65c9a1184b46f55c"
+      sha256 "7b6510453d55e8a82e65ec88e468c53884101661fa79f34ba660710aa1fb2a68"
     end
     on_intel do
       url "https://github.com/sahil87/hop/releases/download/v#{version}/hop-linux-amd64.tar.gz"
-      sha256 "705b85b902d49fd6a518c0bad767c1fdab8756e20195d274146082e6981b4474"
+      sha256 "d615fc19b781e2c6e3ec005c659ee35bf1a76200e1bc400578423d3a911fd148"
     end
   end
 
