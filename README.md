@@ -1,5 +1,7 @@
 # homebrew-tap
 
+> Part of [@sahil87's open source toolkit](https://ai.shll.in) — see all projects there.
+
 A few fab products I use daily, open-sourced.
 
 ## Install
@@ -17,7 +19,7 @@ brew install <formula>
 | [`rk`](https://github.com/sahil87/run-kit) | Tmux session manager with web UI |
 | [`tu`](https://github.com/sahil87/tu) | AI coding assistant cost tracking CLI |
 
-## The full AI dev toolkit — [ai.shll.in](https://ai.shll.in)
+## The full AI dev toolkit
 
 Spec-driven workflow, session management, and cost tracking in one install:
 
