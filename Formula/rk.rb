@@ -4,6 +4,8 @@ class Rk < Formula
   version "1.5.3"
   license "MIT"
 
+  depends_on "sahil87/tap/wt"
+
   on_macos do
     on_arm do
       url "https://github.com/sahil87/run-kit/releases/download/v#{version}/rk-darwin-arm64.tar.gz"
