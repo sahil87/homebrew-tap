@@ -5,6 +5,7 @@ class Rk < Formula
   license "MIT"
 
   depends_on "sahil87/tap/wt"
+  depends_on "tmux" unless which("tmux")
 
   on_macos do
     on_arm do
