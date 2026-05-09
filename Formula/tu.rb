@@ -18,8 +18,6 @@ class Tu < Formula
     libexec.install "dist/vendor"
     libexec.install "tu.default.conf"
     (bin/"tu").write_env_script libexec/"tu.mjs", PATH: "#{Formula["node"].opt_bin}:$PATH"
-
-    generate_completions_from_executable(bin/"tu", "completions", shells: [:bash, :zsh, :fish])
   end
 
   test do
