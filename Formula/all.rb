@@ -12,6 +12,7 @@ class All < Formula
   depends_on "sahil87/tap/hop"
   depends_on "sahil87/tap/wt"
   depends_on "sahil87/tap/idea"
+  depends_on "sahil87/tap/shll"
 
   def install
     (pkgshare/"README.md").write <<~EOS
@@ -22,6 +23,7 @@ class All < Formula
         - hop      quick repo navigation and operations
         - wt       git worktree management CLI
         - idea     idea capture CLI
+        - shll     meta-CLI composing the sahil87 toolkit
     EOS
   end
 
