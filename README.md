@@ -21,6 +21,7 @@ brew install <formula>
 | [`hop`](https://github.com/sahil87/hop) | Quick repo navigation and operations |
 | [`wt`](https://github.com/sahil87/wt) | Git worktree management CLI |
 | [`idea`](https://github.com/sahil87/idea) | Idea capture CLI |
+| [`shll`](https://github.com/sahil87/shll) | Meta-CLI composing the sahil87 toolkit |
 
 ## Install everything
 
