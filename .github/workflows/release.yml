@@ -1,0 +1,77 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Extract version from tag
+        id: version
+        run: |
+          tag="${GITHUB_REF#refs/tags/}"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "version=${tag#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Compute tarball sha256
+        id: sha
+        run: |
+          tag="${{ steps.version.outputs.tag }}"
+          url="https://github.com/${GITHUB_REPOSITORY}/archive/refs/tags/${tag}.tar.gz"
+          # GitHub may take a moment to materialize the tarball after tag push.
+          for attempt in 1 2 3 4 5; do
+            if curl -fL "$url" -o /tmp/source.tar.gz; then
+              break
+            fi
+            echo "Tarball not ready yet (attempt $attempt), retrying..."
+            sleep 5
+          done
+          sha=$(sha256sum /tmp/source.tar.gz | cut -d' ' -f1)
+          echo "sha256=$sha" >> "$GITHUB_OUTPUT"
+
+      - name: Update Formula/all.rb
+        run: |
+          tag="${{ steps.version.outputs.tag }}"
+          version="${{ steps.version.outputs.version }}"
+          sha="${{ steps.sha.outputs.sha256 }}"
+          url="https://github.com/${GITHUB_REPOSITORY}/archive/refs/tags/${tag}.tar.gz"
+
+          # Replace url, sha256, and version fields in-place. Each formula
+          # line uses double-quoted strings; '|' as sed delimiter avoids
+          # escaping slashes in the URL.
+          sed -i.bak \
+            -e "s|^  url \".*\"|  url \"${url}\"|" \
+            -e "s|^  sha256 \".*\"|  sha256 \"${sha}\"|" \
+            -e "s|^  version \".*\"|  version \"${version}\"|" \
+            Formula/all.rb
+          rm Formula/all.rb.bak
+
+          # Fail loudly if the substitutions didn't take.
+          grep -q "url \"${url}\"" Formula/all.rb
+          grep -q "sha256 \"${sha}\"" Formula/all.rb
+          grep -q "version \"${version}\"" Formula/all.rb
+
+      - name: Commit and push
+        run: |
+          version="${{ steps.version.outputs.version }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add Formula/all.rb
+          git commit -m "all v${version}"
+          git push origin main
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@153bb8e04406b158c6c84fc1615b65b24149a1fe # v2
+        with:
+          generate_release_notes: true
