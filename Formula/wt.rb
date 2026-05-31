@@ -1,28 +1,28 @@
 class Wt < Formula
   desc "Git worktree management CLI"
   homepage "https://github.com/sahil87/wt"
-  version "0.0.8"
+  version "0.0.9"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/sahil87/wt/releases/download/v#{version}/wt-darwin-arm64.tar.gz"
-      sha256 "92f5bb1ade50fc0078734acc401e0f803351120a433d7050d09b4bfc9924e1fd"
+      sha256 "8a281645ace4f52c76b37470251cdd0e499a88bbd36efa983519c35e4fa33393"
     end
     on_intel do
       url "https://github.com/sahil87/wt/releases/download/v#{version}/wt-darwin-amd64.tar.gz"
-      sha256 "ba4a1b39d1f0a87bc509013a189c8e230b7b1f79372f7ee04fd916ee66f418d7"
+      sha256 "10ac0a0dd3e37fbd7564094b3c853600a6b106b0d988b3c1f942ce3ef7399e0a"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sahil87/wt/releases/download/v#{version}/wt-linux-arm64.tar.gz"
-      sha256 "42b596f459743f4b770cf40cac104206143db5963efe22be6621eac964f1acaf"
+      sha256 "386642039492f1530baa95865836c622f828d5820a4ef78f786a175ef9e14564"
     end
     on_intel do
       url "https://github.com/sahil87/wt/releases/download/v#{version}/wt-linux-amd64.tar.gz"
-      sha256 "14ed2a7d108a5dc4dd44d66180b6a8c14ffccc518d43d9d32f2b5496dfdd0e3a"
+      sha256 "c85b546aa4ba0a42fd271957b92621d940e383e4bf07b62be00fbd995e5d2076"
     end
   end
 
