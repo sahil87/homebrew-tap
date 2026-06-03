@@ -1,28 +1,28 @@
 class Idea < Formula
   desc "Capture and manage ideas from the command line"
   homepage "https://github.com/sahil87/idea"
-  version "0.0.6"
+  version "0.0.7"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/sahil87/idea/releases/download/v#{version}/idea-darwin-arm64.tar.gz"
-      sha256 "dbcd8bbfe317abde0116229e836419d63b66bc1d9093ecfade638bd1ae597fb1"
+      sha256 "66e56633584f7e2d9741a1925a4caf01ebbf30238a1723992f8c0b8a44e982ba"
     end
     on_intel do
       url "https://github.com/sahil87/idea/releases/download/v#{version}/idea-darwin-amd64.tar.gz"
-      sha256 "28863d76fa98bd8c04db6e31aea53893567e2d75872ae3aa77a49745941513e7"
+      sha256 "67153d2f9a46902f80511baca18acd83f8898065fb3f10c4b945004e90087353"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sahil87/idea/releases/download/v#{version}/idea-linux-arm64.tar.gz"
-      sha256 "09135a114240ade9a50165fe881673a2465495767d30bb04a65d5dab7031c1f7"
+      sha256 "f4adf0e00041b62ed42f55aef81e3b6d40a72e93b81792573c4f4059a608cd26"
     end
     on_intel do
       url "https://github.com/sahil87/idea/releases/download/v#{version}/idea-linux-amd64.tar.gz"
-      sha256 "26cc077ad92e74a6f0a7f3fbb9b386cbebd343ed1c68a5819b5593e31c3f8ed6"
+      sha256 "4b57449d896ce52a782e63ec34015364ec7f4dd8e8484d66621a94e50b783760"
     end
   end
 
