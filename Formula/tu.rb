@@ -8,6 +8,8 @@ class Tu < Formula
       using: :git, tag: "v0.5.0"
   license "MIT"
 
+  depends_on "node"
+
   env :std
 
   def install
