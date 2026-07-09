@@ -16,7 +16,7 @@ brew install <formula>
 | Formula | Description |
 |---------|-------------|
 | [`fab-kit`](https://github.com/sahil87/fab-kit) | Specification-driven development toolkit |
-| [`rk`](https://github.com/sahil87/run-kit) | Tmux session manager with web UI |
+| [`run-kit`](https://github.com/sahil87/run-kit) | Tmux session manager with web UI (installs `run-kit` + `rk` alias) |
 | [`tu`](https://github.com/sahil87/tu) | AI coding assistant cost tracking CLI |
 | [`hop`](https://github.com/sahil87/hop) | Quick repo navigation and operations |
 | [`wt`](https://github.com/sahil87/wt) | Git worktree management CLI |
