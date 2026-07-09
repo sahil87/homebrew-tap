@@ -7,7 +7,7 @@ class All < Formula
   license "MIT"
 
   depends_on "sahil87/tap/fab-kit"
-  depends_on "sahil87/tap/rk"
+  depends_on "sahil87/tap/run-kit"
   depends_on "sahil87/tap/tu"
   depends_on "sahil87/tap/hop"
   depends_on "sahil87/tap/wt"
@@ -18,7 +18,7 @@ class All < Formula
     (pkgshare/"README.md").write <<~EOS
       all is a meta-package that installs every CLI in sahil87/homebrew-tap:
         - fab-kit  spec-driven development toolkit
-        - rk       tmux session manager with web UI
+        - run-kit  tmux session manager with web UI (rk stays as an alias)
         - tu       AI coding assistant cost tracker
         - hop      quick repo navigation and operations
         - wt       git worktree management CLI
