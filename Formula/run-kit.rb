@@ -1,28 +1,28 @@
 class RunKit < Formula
   desc "Tmux session manager with web UI"
   homepage "https://github.com/sahil87/run-kit"
-  version "3.0.3"
+  version "3.0.4"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/sahil87/run-kit/releases/download/v#{version}/rk-darwin-arm64.tar.gz"
-      sha256 "67043e7156d541bf73552ac9287b7b0235a49c2753ffc2be8ede445dc97edbba"
+      sha256 "d2ae729b6dbf78536b68763ce8c238f39ccdb4da852f396ee41497cf9f71ee54"
     end
     on_intel do
       url "https://github.com/sahil87/run-kit/releases/download/v#{version}/rk-darwin-amd64.tar.gz"
-      sha256 "8aa133a173aa86e579420ca9510f75a45b5a3b2e92468ed7b37274876ec9c68e"
+      sha256 "1f3f3019aaf961d1aa5c5562265d265ae7a023213dd49b9089bd4dc8e8604d9c"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sahil87/run-kit/releases/download/v#{version}/rk-linux-arm64.tar.gz"
-      sha256 "469b2fd788e7383d9c9eb2c4ee8eb6d6a05a681fb5c6e5862ebbe43a15c7aee3"
+      sha256 "d90c33dd708b81ab6890acaa870f27958bb2e32d1fe426ea41f888dd551f2033"
     end
     on_intel do
       url "https://github.com/sahil87/run-kit/releases/download/v#{version}/rk-linux-amd64.tar.gz"
-      sha256 "d9a2d82b27d743ad56fc76b9e2187a91a38259f9d5d395df8386347770d5d1ff"
+      sha256 "03472275ef30b63dfe9c0e94b203e33fc226c9f0e7cae79da1aafdf62c4e591f"
     end
   end
 
