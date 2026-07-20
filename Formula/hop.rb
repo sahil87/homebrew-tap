@@ -1,7 +1,7 @@
 class Hop < Formula
   desc "Locate, open, list, and operate on repos from hop.yaml"
   homepage "https://github.com/sahil87/hop"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   depends_on "sahil87/tap/wt"
@@ -9,22 +9,22 @@ class Hop < Formula
   on_macos do
     on_arm do
       url "https://github.com/sahil87/hop/releases/download/v#{version}/hop-darwin-arm64.tar.gz"
-      sha256 "531610dc10f8b1350a88481540a3e95fdf818f4a2435f4e2b9af76974bad20e1"
+      sha256 "5e2e7cf471e18e7246ded30564d7a55b058d47d104a879eaf323c73b4ce4ee6d"
     end
     on_intel do
       url "https://github.com/sahil87/hop/releases/download/v#{version}/hop-darwin-amd64.tar.gz"
-      sha256 "ad56b4bd7ad9a6bc729e1be84901179f6bf9edfabe9f5da30b452602304aaff6"
+      sha256 "98cff213b8aecb94d21a5d8da616230b8800e4fab5cb3d74f613ea6a0ca80e38"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sahil87/hop/releases/download/v#{version}/hop-linux-arm64.tar.gz"
-      sha256 "789fe16c6f6ddc3992b97f47b0421b99de7f155a24d47131f2625a77f2303092"
+      sha256 "209e8d39ed917c1f6dfba81a5a0261395a74986941f580442f69f335d2837be4"
     end
     on_intel do
       url "https://github.com/sahil87/hop/releases/download/v#{version}/hop-linux-amd64.tar.gz"
-      sha256 "d8d250ec848d40e773fb89540e73c92988c07f29e9be02f8aa7f40c823a3991f"
+      sha256 "8c99b03de61f2c00f1b6d40e1d05e8c39720dbf436bb90cc89f39b5eacc9ea26"
     end
   end
 
