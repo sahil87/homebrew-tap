@@ -2,14 +2,17 @@
 
 > Part of [@sahil87's open source toolkit](https://ai.shll.in) — see all projects there.
 
-A Homebrew tap for the CLIs I build and use daily. One `brew tap` away from everything below.
+A Homebrew tap for the CLIs I build and use daily.
 
 ## Install
 
+Head to [shll.ai](https://shll.ai) — one command bootstraps the whole toolkit:
+
 ```bash
-brew tap sahil87/tap
-brew install <formula>
+curl -fsSL https://shll.ai/install | sh
 ```
+
+This installs `shll` and runs `shll install`, which sets up everything below.
 
 ## Formulas
 
@@ -22,16 +25,6 @@ brew install <formula>
 | [`wt`](https://github.com/sahil87/wt) | Git worktree management CLI |
 | [`idea`](https://github.com/sahil87/idea) | Idea capture CLI |
 | [`shll`](https://github.com/sahil87/shll) | Meta-CLI composing the sahil87 toolkit |
-
-## Install everything
-
-Get the full toolkit in one command:
-
-```bash
-brew install sahil87/tap/all
-```
-
-Pulls all formulas above as dependencies.
 
 ## License
 
