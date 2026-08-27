@@ -5,7 +5,7 @@ class Tu < Formula
   desc "AI coding assistant cost tracking CLI"
   homepage "https://github.com/sahil87/tu"
   url "https://github.com/sahil87/tu.git",
-      using: :git, tag: "v0.11.1"
+      using: :git, tag: "v0.11.2"
   license "MIT"
 
   depends_on "node"
