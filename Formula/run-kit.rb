@@ -1,7 +1,7 @@
 class RunKit < Formula
   desc "Tmux session manager with web UI"
   homepage "https://github.com/sahil87/run-kit"
-  version "3.19.45"
+  version "3.19.46"
   license "MIT"
 
   # tmux is a hard runtime dependency — every rk feature drives a tmux
@@ -22,22 +22,22 @@ class RunKit < Formula
   on_macos do
     on_arm do
       url "https://github.com/sahil87/run-kit/releases/download/v#{version}/rk-darwin-arm64.tar.gz"
-      sha256 "1cf83dfae156b615dfcd7048eb1e9e062b8e67349712ed49cfcaab31344a8446"
+      sha256 "663dbe012b7b399348b2383c4306feb055bc81502fac65cd3cd395f151a41b38"
     end
     on_intel do
       url "https://github.com/sahil87/run-kit/releases/download/v#{version}/rk-darwin-amd64.tar.gz"
-      sha256 "d89a9ba61d5530d1abb24c5407d2d6ca3cfb63e4e73fd3763d13e0aa04b4ebe8"
+      sha256 "feeb36a80bcf4eeb9ebe560528237402cea290cd041e663cdb37cfe19641ffb6"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sahil87/run-kit/releases/download/v#{version}/rk-linux-arm64.tar.gz"
-      sha256 "682bc1f81ec9f6ea693b9dd21ca39e14b9db4563e8631e441cc7b64ebf0a49af"
+      sha256 "193353b675419899598f0d56f26d16692dbc340dc81eb847805f98abd1b66098"
     end
     on_intel do
       url "https://github.com/sahil87/run-kit/releases/download/v#{version}/rk-linux-amd64.tar.gz"
-      sha256 "6fba14f831c51542970ecde4c785b99e405952b992b2433a428cde036f0c4d3f"
+      sha256 "da41ab00111aff994d74cbc5b1722660cd2fb848168708a45cce6a4a6db74b68"
     end
   end
 
