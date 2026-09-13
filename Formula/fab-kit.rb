@@ -1,28 +1,28 @@
 class FabKit < Formula
   desc "Specification-driven development toolkit — fab router and fab-kit workspace lifecycle manager"
   homepage "https://github.com/sahil87/fab-kit"
-  version "2.26.3"
+  version "2.26.4"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/sahil87/fab-kit/releases/download/v#{version}/brew-darwin-arm64.tar.gz"
-      sha256 "01cf8e4d6c1afdfa31a7c2046cdffa1346eab6df17fe04860c92919384e4662f"
+      sha256 "b37c65a1a113db8744bb35a948ddc8fd9653c1ccc44c2ffbf9a2cc9cbe54eff3"
     end
     on_intel do
       url "https://github.com/sahil87/fab-kit/releases/download/v#{version}/brew-darwin-amd64.tar.gz"
-      sha256 "8de0c932180513af4695f45f05a8534531dc97ed4aa9d2515d2c412e03e55770"
+      sha256 "3f4fd522ba24982e123dc75c5f3a4bad4bff5e26168b685445f3bbfaf35759bf"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sahil87/fab-kit/releases/download/v#{version}/brew-linux-arm64.tar.gz"
-      sha256 "44b216c72d9e2e65748a7cf47227c2a51326333ae4c5748a337d5d5f1abbd33b"
+      sha256 "3b46c9fa8c274d881f5d765ac42619f080e97a81e2181b1d03b4f7cbb4e245eb"
     end
     on_intel do
       url "https://github.com/sahil87/fab-kit/releases/download/v#{version}/brew-linux-amd64.tar.gz"
-      sha256 "db83b24c22d7354e4cfbe664d57a3600f27ee824b2bf2085b484ca7504170065"
+      sha256 "e659bebb343b110a33b130233e09252da6f35b35aba39bfda124536053edd9de"
     end
   end
 
