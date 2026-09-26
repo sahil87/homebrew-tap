@@ -1,6 +1,6 @@
 # homebrew-tap
 
-> Part of [@sahil87's open source toolkit](https://ai.shll.in) — see all projects there.
+> Part of [@sahil87's open source toolkit](https://hexokit.com) — see all projects there.
 
 A Homebrew tap for the CLIs I build and use daily.
 
@@ -19,7 +19,7 @@ This installs `shll` and runs `shll install`, which sets up everything below.
 | Formula | Description |
 |---------|-------------|
 | [`fab-kit`](https://github.com/sahil87/fab-kit) | Specification-driven development toolkit |
-| [`run-kit`](https://github.com/sahil87/run-kit) | Tmux session manager with web UI (installs `run-kit` + `rk` alias) |
+| [`hexokit`](https://github.com/sahil87/run-kit) | Tmux session manager with web UI (installs `hexokit` + `rk`/`xk`/`run-kit` aliases) |
 | [`tu`](https://github.com/sahil87/tu) | AI coding assistant cost tracking CLI |
 | [`hop`](https://github.com/sahil87/hop) | Quick repo navigation and operations |
 | [`wt`](https://github.com/sahil87/wt) | Git worktree management CLI |
