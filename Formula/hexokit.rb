@@ -1,7 +1,7 @@
 class Hexokit < Formula
   desc "Tmux session manager with web UI"
   homepage "https://github.com/sahil87/run-kit"
-  version "3.20.21"
+  version "3.20.22"
   license "MIT"
 
   # tmux is a hard runtime dependency — every rk feature drives a tmux
@@ -22,22 +22,22 @@ class Hexokit < Formula
   on_macos do
     on_arm do
       url "https://github.com/sahil87/run-kit/releases/download/v#{version}/rk-darwin-arm64.tar.gz"
-      sha256 "1f0a4dcdfac0ad0cac1dd8bfeaf494bbfd007cfe60fe373b98594ef96b7efa55"
+      sha256 "2bc8876a02fc1fff73982cbd5e12597e3c6c5b7318770e52de09f5e199de63bc"
     end
     on_intel do
       url "https://github.com/sahil87/run-kit/releases/download/v#{version}/rk-darwin-amd64.tar.gz"
-      sha256 "11a86231e73efcff794c409421fbcdfe4d88e55f6b51f15e179ac20ac347ded8"
+      sha256 "466741c73b42dd157697e01ce1cd384500bc7dba0d8bb8a0681a6f34d086e6a1"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sahil87/run-kit/releases/download/v#{version}/rk-linux-arm64.tar.gz"
-      sha256 "14fcced6fe96ff7b6978504948986852b4bb45f5547374ac7298a1a301f90b48"
+      sha256 "146706939b14f56c38a0801073bfba2f3f2cd37d56eb5326c78d85fd3172e4b7"
     end
     on_intel do
       url "https://github.com/sahil87/run-kit/releases/download/v#{version}/rk-linux-amd64.tar.gz"
-      sha256 "e219b25c5fda6e8a696868008972d7af1d9b97d77b23fecce990b28061426a70"
+      sha256 "8cc30c331e9f12e4a3743d109e82e63f59f5e319b2f92c874f0446df82787206"
     end
   end
 
@@ -49,9 +49,9 @@ class Hexokit < Formula
   end
 
   test do
-    assert_match "run-kit version", shell_output("#{bin}/hexokit --version")
-    assert_match "run-kit version", shell_output("#{bin}/rk --version")
-    assert_match "run-kit version", shell_output("#{bin}/xk --version")
-    assert_match "run-kit version", shell_output("#{bin}/run-kit --version")
+    assert_match "hexokit version", shell_output("#{bin}/hexokit --version")
+    assert_match "hexokit version", shell_output("#{bin}/rk --version")
+    assert_match "hexokit version", shell_output("#{bin}/xk --version")
+    assert_match "hexokit version", shell_output("#{bin}/run-kit --version")
   end
 end
