@@ -1,3 +1,4 @@
 {
-  "rk": "run-kit"
+  "rk": "run-kit",
+  "run-kit": "hexokit"
 }
