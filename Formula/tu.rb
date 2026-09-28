@@ -1,28 +1,28 @@
 class Tu < Formula
   desc "AI coding assistant cost tracking CLI"
   homepage "https://github.com/sahil87/tu"
-  version "0.12.3"
+  version "0.12.4"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/sahil87/tu/releases/download/v#{version}/tu-go-darwin-arm64.tar.gz"
-      sha256 "eac2235e26c8eec04ec8db953b9c9284abbe02dcf03cc603f422b42d5491cc33"
+      sha256 "50dd54d6f100294bf8934bdacc73e97e7085415d77e65f261eef1503fd6f7986"
     end
     on_intel do
       url "https://github.com/sahil87/tu/releases/download/v#{version}/tu-go-darwin-amd64.tar.gz"
-      sha256 "470fc4baf3f8b6e4cb64417afac1d3919083cc03a4ba4a3e5d7c044c89b4d58c"
+      sha256 "2c49b6ac6c6625a55a3f5670afef54d7f16596950735e340b986b6942bf50dc2"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sahil87/tu/releases/download/v#{version}/tu-go-linux-arm64.tar.gz"
-      sha256 "ed9844efb7508167aebaa321805602f82d4994a7eb91305258d12a22c51b01b2"
+      sha256 "449d10788ced9ca35458a0bb99f04edd86ead44903e4da57c6cc0863dc889082"
     end
     on_intel do
       url "https://github.com/sahil87/tu/releases/download/v#{version}/tu-go-linux-amd64.tar.gz"
-      sha256 "33ee55aede9392082e5c0e81bec170d0675ec767072364f3ed943ba00ba26161"
+      sha256 "f7d8f3d6d7d8e0b108bb638ac063662231f125cad258f7449d2b6be5ce0e25b4"
     end
   end
 
