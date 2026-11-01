@@ -1,7 +1,7 @@
 class Hexokit < Formula
   desc "Tmux session manager with web UI"
   homepage "https://github.com/sahil87/hexokit"
-  version "3.22.3"
+  version "3.22.4"
   license "MIT"
 
   # tmux is a hard runtime dependency — every rk feature drives a tmux
@@ -22,22 +22,22 @@ class Hexokit < Formula
   on_macos do
     on_arm do
       url "https://github.com/sahil87/hexokit/releases/download/v#{version}/rk-darwin-arm64.tar.gz"
-      sha256 "2751ce6076ccfedc9954862b24226f78baa4d37fab3622e839fb6241785f9905"
+      sha256 "dccd0450e782f0b2e62554c93a35ef1789351cf0c886fb44b878d24e5e7371f5"
     end
     on_intel do
       url "https://github.com/sahil87/hexokit/releases/download/v#{version}/rk-darwin-amd64.tar.gz"
-      sha256 "6316a82a98607d86849a4f2b61bcf2e6ed9985f66f37b90377f44a795d0a0359"
+      sha256 "a7f2549a30a28d0d2b565f1d41f1dd2d3963f5bdf543fff508073ab5d6c72e94"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sahil87/hexokit/releases/download/v#{version}/rk-linux-arm64.tar.gz"
-      sha256 "6068999eac490b9ba407ddd7b11e5062ce3b8b637d68aed25c2b6b1bd8966e8b"
+      sha256 "403ec0dd8025e8b398a47c1db19998d4bfbb1c1d59598a596e07a29da67f053b"
     end
     on_intel do
       url "https://github.com/sahil87/hexokit/releases/download/v#{version}/rk-linux-amd64.tar.gz"
-      sha256 "1962ebf23c68c12716c202b33c625453179e1a8bbdf10481813f3a17132005a4"
+      sha256 "634d52e91abc6776477202d091a156d4dedaa3d0b0057fcff97afeaf3b4c3fa7"
     end
   end
 
