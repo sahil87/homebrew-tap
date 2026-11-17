@@ -1,28 +1,28 @@
 class Shll < Formula
   desc "Meta-CLI for the HexoKit toolkit — update, shell-init, and version across all shll tools"
   homepage "https://github.com/sahil87/shll"
-  version "0.1.36"
+  version "0.1.37"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/sahil87/shll/releases/download/v#{version}/shll-darwin-arm64.tar.gz"
-      sha256 "ae7d6d3d3edb1178dd52310ce9ca54afb4c5ad5eb7082ecee4d65ad8d3d36629"
+      sha256 "5b0d062901f8199b072372421fbafd4dbe12de71e52ee2d011c790f79a650745"
     end
     on_intel do
       url "https://github.com/sahil87/shll/releases/download/v#{version}/shll-darwin-amd64.tar.gz"
-      sha256 "f646ad48781d51b95317d9760337b77b5ece47873e1edf66ad921e39fb5d02a2"
+      sha256 "f605361ff5d035ef1ed051cef0a5e9ff13c8800e1270d9c67f67bc10ef739cc4"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/sahil87/shll/releases/download/v#{version}/shll-linux-arm64.tar.gz"
-      sha256 "88d019db43d46fb380d5432ef7b0c35e2846ef104d8b3c51badd70b7f56b2fb0"
+      sha256 "80cc993ea34e2dde6bb823a6cf3cd26844f8e36fc722780120a7e27f383ebc40"
     end
     on_intel do
       url "https://github.com/sahil87/shll/releases/download/v#{version}/shll-linux-amd64.tar.gz"
-      sha256 "9262608297ac0eac21e119177728141c2059c0556d0fc0adeefb3957298a6e0e"
+      sha256 "fd39861d2635b6ee06e89cd0594d4677370e33f9e6b2337384cfdb0f50b6ce24"
     end
   end
 
